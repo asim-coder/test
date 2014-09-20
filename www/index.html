@@ -1,18 +1,16 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
-<html>
+    <html>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
         <script  src = "js/jquery.js"></script>
         <script type="text/javascript" src = "js/index.js"></script>        
-        <script  src = "formsubmit.js"></script>
         <meta name="msapplication-tap-highlight" content="no" />
-        <title>Agreement Creator</title>
+        <title>Title</title>
     </head>
     <body>
         <div class="topcoat-navigation-bar">
@@ -21,56 +19,16 @@
             </div>
         </div>
         <div class = "content text-input">
-        <form id = "form" name = "form">
+        <form id = "form" name = "form" action="http://localhost/index.php" method = "post">
             <p>Please fill the details.
-            <p>Landlord Name</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="" id = "landlord">
-            <p>Tenant Name</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="" id = "tenant">
-            <p>Location</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="" id = "location">
-            <p>Month</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Year</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <hr>
-            <p>Property Details</p>
-            <p>Number</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Street</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>City</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <hr>
-            <p>Term Details</p>
-            <p>Begins on</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Ends On</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Paying Amount</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Date of pay</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Utilities offering by landlord</p>
-            <textarea class="topcoat-textarea" rows="6" cols="36" placeholder="Textarea"></textarea>
-            <br>
-            <p>Deposit acknowledged</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Name</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Name</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Name</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <p>Name</p>
-            <input type="text" class="topcoat-text-input" placeholder="text" value="">
-            <br><p></p>
-            <input id = "submit" type="button" class="topcoat-button" value = "Create Agreement">
+            <p> Name</p>
+            <input type="text" class="topcoat-text-input" placeholder="text" value="" id = "landlord" name = "landlord">
+            <input id = "submit" type="submit" class="topcoat-button" value = "Submit">
         </form>
-<!--<script type="text/javascript">
-    var frm = $('#contactForm1');
-    frm.submit(function (ev) {
-        $.ajax({
+        <script type="text/javascript">
+        var frm = $('#form');
+        frm.submit(function (ev) {
+            $.ajax({
             type: frm.attr('method'),
             url: frm.attr('action'),
             data: frm.serialize(),
@@ -81,7 +39,7 @@
 
         ev.preventDefault();
     });
-</script>
+    </script>
         </div>
     </body>
-</html>
+    </html>
