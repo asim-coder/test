@@ -2,9 +2,9 @@
             function downloadPDFFile() {
                 alert("called downloadPDFFile");
                 var fileDownloadPDF = new FileTransfer();
-                var uri = encodeURI('http://alrais.host22.com/test.html');
+                var uri = encodeURI('http://alrais.host22.com/agreement.pdf');
                 var folder = '/sdcard/';
-                var fileName = 'test.txt';
+                var fileName = 'agreement.pdf';
                 var pathToFile = folder + fileName;
                 console.log("Hai")
                 fileDownloadPDF.download(

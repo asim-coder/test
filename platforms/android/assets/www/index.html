@@ -10,31 +10,10 @@
     <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>        
          -->    
         <script src="js/jquery.js"></script>
+        <script src="js/downloadpdffile.js"></script>
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Make Agreement</title>
-        <script type="text/javascript"> 
-            function downloadPDFFile() {
-                alert("called downloadPDFFile");
-                var fileDownloadPDF = new FileTransfer();
-                var uri = encodeURI('http://alrais.host22.com/test.txt');
-                var pathToFile = '/mnt/sdcard/test2.txt'
-
-                fileDownloadPDF.download(
-                                  uri,
-                                  pathToFile,
-                                  function(entry) {
-                                  console.log("download complete: " + entry.fullPath);
-                                  alert("File Downloaded. Click 'Read Editable Downloaded File' to see text");
-                                  },
-                                  function(error) {
-                                  console.log("download error source " + error.source);
-                                  console.log("download error target " + error.target);
-                                  console.log("upload error code" + error.code);
-                                  alert("Download error!!.")
-                                  }
-                                  );
-            }
-        </script>
+        
     </head>
     <body>
         <div class="topcoat-navigation-bar">
@@ -43,7 +22,7 @@
             </div>
         </div>
         <div class = "content text-input">
-            <form id = "form" name = "form" action="http://alrais.host22.com/index.php" method = "post">
+            <form id = "form" name = "form">
             <p>Please fill the details.
             <p>Landlord Name</p>
             <input type="text" class="topcoat-text-input" placeholder="text" value="" id = "landlord" name= "landlord">
@@ -89,22 +68,8 @@
             </form>
             <div id="myDiv"></div>
         </div>
- 
-        <script type="text/javascript">
-            var frm = $('#form');
-            frm.submit(function (ev) {
-        ev.preventDefault();
-                //alert("Hai" + frm.attr('method') +frm.attr('action') + frm.serialize());
-                $.ajax({
-                type: frm.attr('method'),
-                url: frm.attr('action'),
-                data: frm.serialize(),
-                success: function (data) {
-                    alert('Download your agreement in pdf form at the end of the page.');
-                }
-                });
-                document.getElementById("myDiv").innerHTML="<button onclick='downloadPDFFile();' class='topcoat-button'>Download PDF Agreement</button>";
-            });
-        </script>
+    <script src="js/postdata.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     </body>
     </html>

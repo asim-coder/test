@@ -38,8 +38,10 @@
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/cordova_plugins.js \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/plugins \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/css \
+/home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/js/postdata.js \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/js/index.js \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/js/jquery.js \
+/home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/js/downloadpdffile.js \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/img/dialog-zone-bg.png \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/img/dark-combo-box-bg.png \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/assets/www/img/drop-down-triangle.png \
