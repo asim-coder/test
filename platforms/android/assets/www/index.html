@@ -12,6 +12,29 @@
         <script src="js/jquery.js"></script>
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Make Agreement</title>
+        <script type="text/javascript"> 
+            function downloadPDFFile() {
+                alert("called downloadPDFFile");
+                var fileDownloadPDF = new FileTransfer();
+                var uri = encodeURI('http://alrais.host22.com/test.txt');
+                var pathToFile = '/mnt/sdcard/test2.txt'
+
+                fileDownloadPDF.download(
+                                  uri,
+                                  pathToFile,
+                                  function(entry) {
+                                  console.log("download complete: " + entry.fullPath);
+                                  alert("File Downloaded. Click 'Read Editable Downloaded File' to see text");
+                                  },
+                                  function(error) {
+                                  console.log("download error source " + error.source);
+                                  console.log("download error target " + error.target);
+                                  console.log("upload error code" + error.code);
+                                  alert("Download error!!.")
+                                  }
+                                  );
+            }
+        </script>
     </head>
     <body>
         <div class="topcoat-navigation-bar">
@@ -82,25 +105,6 @@
                 });
                 document.getElementById("myDiv").innerHTML="<button onclick='downloadPDFFile();' class='topcoat-button'>Download PDF Agreement</button>";
             });
-                function downloadPDFFile() {
-                var fileDownloadPDF = new FileTransfer();
-                var uri = encodeURI("http://alrais.host22.com/agreement.pdf");
-
-                fileDownloadPDF.download(
-                                  uri,
-                                  '/mnt/sdcard/Agreement.pdf',
-                                  function(entry) {
-                                  console.log("download complete: " + entry.fullPath);
-                                  alert("File Downloaded. Click 'Read Editable Downloaded File' to see text");
-                                  },
-                                  function(error) {
-                                  console.log("download error source " + error.source);
-                                  console.log("download error target " + error.target);
-                                  console.log("upload error code" + error.code);
-                                  alert("Download error!!.")
-                                  }
-                                  );
-    }
         </script>
     </body>
     </html>
