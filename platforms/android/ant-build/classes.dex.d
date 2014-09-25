@@ -6,6 +6,8 @@
 /home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/com/alrais/agreement_creator/R$string.class \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/com/alrais/agreement_creator/BuildConfig.class \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/com/alrais/agreement_creator/Ag_Cr.class \
+/home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/fr/smile/cordova/fileopener/FileOpener$1.class \
+/home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/fr/smile/cordova/fileopener/FileOpener.class \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$22.class \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$24.class \
 /home/alrais/Development/cordova/agreement_creator/platforms/android/ant-build/classes/org/apache/cordova/file/FileUtils$4.class \

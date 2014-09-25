@@ -34,6 +34,24 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+            /* --------------------------------- Event Registration -------------------------------- */
+        document.addEventListener('deviceready',function () {
+            StatusBar.overlaysWebView( false );//iOS
+            StatusBar.backgroundColorByHexString('#ffffff');
+            StatusBar.styleDefault();
+            if (navigator.notification) {   //overide default html
+                window.alert = function(message) {
+                    navigator.notification.alert(
+                        message,
+                        null,   //callback
+                        "HelloWorld",   //title
+                        'OK'
+                        );
+                };
+            }
+        }, false);
+        FastClick.attach(document.body); // For removing delay in iOS 
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,3 +65,5 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
+

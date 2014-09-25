@@ -1,6 +1,6 @@
 .text-input {
+	width: 100%;
 	padding-left: 10px;
-	padding-right: 5px;
 	margin-bottom: 30px;
 	margin-top: 20px;
 }
@@ -12,5 +12,9 @@
 
 button::-moz-focus-inner {
   border: 0;
+}
+
+.topcoat-textarea {
+	font-size: 15px;
 }
 

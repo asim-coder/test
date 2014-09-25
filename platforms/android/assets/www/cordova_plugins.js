@@ -159,13 +159,21 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "file": "plugins/fr.smile.cordova.fileopener/www/FileOpener.js",
+        "id": "fr.smile.cordova.fileopener.FileOpener",
+        "clobbers": [
+            "cordova.plugins.FileOpener"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "org.apache.cordova.file": "1.3.1",
-    "org.apache.cordova.file-transfer": "0.4.6"
+    "org.apache.cordova.file-transfer": "0.4.6",
+    "fr.smile.cordova.fileopener": "1.0.0"
 }
 // BOTTOM OF METADATA
 });

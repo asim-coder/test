@@ -5,14 +5,12 @@
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.min.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/topcoat-mobile-light.min.css" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>        
          -->    
         <script src="js/jquery.js"></script>
-        <script type="text/javascript" src = "index.js"></script>
         <script src="js/downloadpdffile.js"></script>
-        <script src="js/pdfviewer.js"></script>
         <meta name="msapplication-tap-highlight" content="no" />
         <title>Make Agreement</title>
         
@@ -57,11 +55,11 @@
             <p>Paying Amount</p>
             <input type="text" class="topcoat-text-input" placeholder="text" value="" name = "term_amt" id = "term_amt">
             <p>Date of pay</p>
-            <input type="text" class="topcoat-text-input" rows = "2" placeholder="text" value="" name = "term_due" id = "term_due">
+            <input type="text" class="topcoat-text-input" placeholder="text" value="" name = "term_due" id = "term_due">
             <p>Utilities offering by landlord</p>
-            <textarea class="topcoat-textarea" rows="6" cols="21" placeholder="Textarea" name = "utilities" id = "utilities"></textarea>
+            <textarea class="topcoat-textarea" rows="6" cols="36" placeholder="Textarea" name = "utilities" id = "utilities"></textarea>
             <p>Furniture and appliances</p>
-            <textarea class="topcoat-textarea" rows="6" cols="21" placeholder="Textarea" name = "furniture" id = "furniture"></textarea>
+            <textarea class="topcoat-textarea" rows="6" cols="36" placeholder="Textarea" name = "furniture" id = "furniture"></textarea>
             <br>
             <p>Deposit acknowledged</p>
             <input type="text" class="topcoat-text-input" placeholder="text" value="" name = "deposit" id = "deposit">
